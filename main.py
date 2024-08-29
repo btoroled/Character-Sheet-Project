@@ -234,6 +234,98 @@ dark_elf_proficiencies = {"Rapiers" : True, "Shortsword": True, "Hand Crossbow":
 
 #High Elf 
 high_elf_abilities_increase = Ability(0, 2, 0, 1, 0, 0)
+high_elf_cantrip = {"Cantrip": "You know one cantrip of your choice from the Wizard spell list. Intelligence is your spellcasting ability for it."}
+extra_language = {"Extra Language": "You can read, speak, and write one additional language of your choice."}
+extra_language_choice = input("Enter a valid language:")
+
 #Wood Elf
 wood_elf_abilities_increase = Ability(0, 2, 0, 0, 1, 0)
+wood_elf_speed = elf_speed + 5
+mask_of_the_wild = {"Mask of the Wild": "You can attempt to hide even when you are only lightly obscured by foliage, heavy rain, falling snow, mist, and other natural phenomena."}
 
+#Wood and High Elf
+elf_weapon_training = {"Elf Weapon Training": "You have proficiency with the longsword, shortsword, shortbow, and longbow."}
+elf_weapon_proficiencies = {"Longsword": True, "Shortsword": True, "Shortbow": True, "Longbow": True}
+
+#Dragonborn
+
+dragonborn_abilities_increase = Ability(2, 0, 0, 0, 0, 1)
+dragonborn_size = "Medium"
+dragonborn_speed = 30
+dragonborn_color = {
+    "Black":
+        {"Damage type": "Acid",
+         "Breath weapon": "5 by 30 ft. line (DEX save)"
+        },
+    "Blue":
+        {"Damage type": "Lightning",
+         "Breath weapon": "5 by 30 ft. line (DEX save)"
+        },
+    "Brass":
+        {
+        "Damage type": "Fire",
+        "Breath weapon": "5 by 30 ft. line (DEX save)"
+        },
+    "Bronze":
+        {
+         "Damage type": "Lightning",
+         "Breath weapon": "5 by 30 ft. line (DEX save)" 
+        },
+    "Copper":
+        {
+         "Damage type": "Acid",
+         "Breath weapon": "5 by 30 ft. line (DEX save)" 
+        },
+    "Gold":
+        {
+         "Damage type": "Fire",
+         "Breath weapon": "15 ft. cone (DEX save)" 
+        },
+    "Green":
+        {
+         "Damage type": "Poison",
+         "Breath weapon": "15 ft. cone (CON save)" 
+        },
+    "Red":
+        {
+         "Damage type": "Fire",
+         "Breath weapon": "15 ft. cone (DEX save)" 
+        },
+    "Silver":
+        {
+         "Damage type": "Cold",
+         "Breath weapon": "15 ft. cone (CON save)" 
+        },
+    "White":
+        {
+         "Damage type": "Cold",
+         "Breath weapon": "15 ft. cone (CON save)" 
+        }          
+    } 
+
+dragonborn_color_selection = dragonborn_color[input("Select yout dragonborn color")]
+breath_weapon = {"Breath Weapon": "You can use your action to exhale destructive energy. It deals damage in an area according to your ancestry. When you use your breath weapon, all creatures in the area must make a saving throw, the type of which is determined by your ancestry. The DC of this saving throw is 8 + your Constitution modifier + your proficiency bonus. A creature takes 2d6 damage on a failed save, and half as much damage on a successful one. The damage increase to 3d6 at 6th level, 4d6 at 11th, and 5d6 at 16th level. After using your breath weapon, you cannot use it again until you complete a short or long rest."}
+damage_resistance = dragonborn_color[input("Select yout dragonborn color")]["Damage type"]
+dragonborn_languages = ("Common", "Draconic")
+
+#Gnome
+gnome_size = "Small"
+gnome_speed = 25
+gnome_cunning = {"Gonme Cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saves against magic."}
+gnome_lenguages = ("Common", "Gnomish")
+gnome_features = darkvision + gnome_cunning
+
+#Forest Gnome
+forest_gnome_ability_score_increase = Ability(0,1, 0, 2, 0, 0)
+natural_illusionnist = {"Natural Illusionist": "You know the Minor Illusion cantrip. Intelligence is your spellcasting modifier for it."}
+speak_with_small_beast = {"Speak with Small Beast": "Through sound and gestures, you may communicate simple ideas with Small or smaller beasts."}
+
+#Rock Gnome
+rock_gnome_ability_score_increase = Ability(0, 0, 1, 2, 0, 0)
+artificer_lore = {"Artificer's Lore": "Whenever you make an Intelligence (History) check related to magical, alchemical, or technological items, you can add twice your proficiency bonus instead of any other proficiency bonus that may apply."}
+tinker = {"Tinker": "You have proficiency with artisan tools (tinker's tools). Using those tools, you can spend 1 hour and 10 gp worth of materials to construct a Tiny clockwork device (AC 5, 1 hp). The device ceases to function after 24 hours (unless you spend 1 hour repairing it to keep the device functioning), or when you use your action to dismantle it; at that time, you can reclaim the materials used to create it. You can have up to three such devices active at a time. When you create a device, choose one of the following options:"}
+tinker_options = {
+    "Clockwork Toy": "This toy is a clockwork animal, monster, or person, such as a frog, mouse, bird, dragon, or soldier. When placed on the ground, the toy moves 5 feet across the ground on each of your turns in a random direction. It makes noises as appropriate to the creature it represents.",
+    "Fire Starter": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.",
+    "Music Box": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
+}
