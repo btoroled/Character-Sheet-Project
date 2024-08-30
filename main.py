@@ -313,7 +313,7 @@ gnome_size = "Small"
 gnome_speed = 25
 gnome_cunning = {"Gonme Cunning": "You have advantage on all Intelligence, Wisdom, and Charisma saves against magic."}
 gnome_lenguages = ("Common", "Gnomish")
-gnome_features = darkvision + gnome_cunning
+gnome_features = {darkvision, gnome_cunning}
 
 #Forest Gnome
 forest_gnome_ability_score_increase = Ability(0,1, 0, 2, 0, 0)
@@ -329,3 +329,29 @@ tinker_options = {
     "Fire Starter": "The device produces a miniature flame, which you can use to light a candle, torch, or campfire. Using the device requires your action.",
     "Music Box": "When opened, this music box plays a single song at a moderate volume. The box stops playing when it reaches the song's end or when it is closed."
 }
+
+#Half Elf
+half_elf_ability_score_increase = Ability(0,0,0,0,0,2)
+half_elf_size = "Medium"
+half_elf_speed = 30
+half_elf_features = {darkvision, fey_ancestry} 
+half_elf_choice_language = input("Select a language of your choice")
+half_elf_languages = ("Common", "Elven", half_elf_choice_language)
+half_elf_versatility = {
+    "Skill Versatility": {
+        "Ancestry": "General",
+        "Versatily feature": "You gain proficiency in two skills of your choice."
+    },
+    elf_weapon_training, 
+    high_elf_cantrip,
+    "Fleet of Foot":{
+        "Ancestry": "Wood Elf Heritage",
+        "Versatility feature": "Your base speed increases to 35 feet"
+    },
+    mask_of_the_wild,
+    drow_magic,
+    "Swim Speed":{
+        "Ancestry": "Aquatic Elf Heritage",
+        "Versatility feature": "You have a swimming speed of 30 feet"
+    }
+    }
