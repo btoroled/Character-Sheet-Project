@@ -342,16 +342,55 @@ half_elf_versatility = {
         "Ancestry": "General",
         "Versatily feature": "You gain proficiency in two skills of your choice."
     },
-    elf_weapon_training, 
-    high_elf_cantrip,
+    "Elf Weapon Training": "a", 
+    "High Elf Cantrip": "",
     "Fleet of Foot":{
         "Ancestry": "Wood Elf Heritage",
         "Versatility feature": "Your base speed increases to 35 feet"
     },
-    mask_of_the_wild,
-    drow_magic,
+    "Mask of the Wild": "a",
+    "Drow Magic" : "a",
     "Swim Speed":{
         "Ancestry": "Aquatic Elf Heritage",
         "Versatility feature": "You have a swimming speed of 30 feet"
     }
     }
+
+#Halfling
+halfling_size = "Small"
+halfling_speed = 25
+lucky = {"Lucky": "When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1.When you roll a 1 on an attack roll, ability check, or saving throw, you can reroll the die. You must use the new result, even if it is a 1."}
+brave = {"Brave": "You have advantage on saving throws against being frightened."}
+nimble = {"Nimble": "You can move through the space of any creature that is of a size larger than yours."}
+half_ling_languages = ("Common", "Halfling")
+
+#Halfling Lightot
+half_ling_lightfoot_ability_score_increase = Ability(0,2,0,0,0,1)
+naturally_stealthy = {"Naturally Stealthy": "You can attempt to hide even when you are only obscured by a creature that is at least one size larger than you."}
+
+#Halfling Stout
+half_ling_stout_ability_score_increase = Ability(0,2,1,0,0,0)
+stout_resilence = {"Stout Resilence": "You have advantage on saving throws against poison, and you have resistance to poison damage."}
+
+#Half Orc
+half_orc_ability_score_increase = Ability(2, 0, 1, 0, 0, 0)
+half_orc_size = "Medium"
+half_orc_speed = 30
+menacing = {"Menacing": "You gain proficiency in the Intimidation skill."}
+half_orc_darkvision = darkvision
+relentless_endurance = {"Relentless Endurace": "When you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."}
+savage_attacks = {"Savage Attacks": "When you score a critical hit with a melee weapon attack, you can roll one of the weapon's damage dice one additional time and add it to the extra damage of the critical hit."}
+orc_languages = ("Orc", "Common")
+
+#Tiefling
+tiefling_bd_asmodeus_ability_score_increase = Ability(0,0,0,1,0,2)
+tiefling_size = "Medium"
+tiefling_speed = 30
+tefling_darkvision = darkvision
+hellish_resistance = {"Hellish resistance": "You have resistance to fire damage"}
+tiefling_languages = ("Common", "Infernal")
+
+#tiefling subraces
+
+#Asmodeus
+infernal_legacy = {"Infernal Legacy": " You know the Thaumaturgy cantrip. Once you reach 3rd level, you can cast the Hellish Rebuke spell once as a 2nd-level spell. Once you reach 5th level, you can also cast the Darkness spell once. You must finish a long rest to cast these spells again with this trait. Charisma is your spellcasting ability for these spells."}
