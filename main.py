@@ -364,7 +364,7 @@ brave = {"Brave": "You have advantage on saving throws against being frightened.
 nimble = {"Nimble": "You can move through the space of any creature that is of a size larger than yours."}
 half_ling_languages = ("Common", "Halfling")
 
-#Halfling Lightot
+#Halfling Lightfoot
 half_ling_lightfoot_ability_score_increase = Ability(0,2,0,0,0,1)
 naturally_stealthy = {"Naturally Stealthy": "You can attempt to hide even when you are only obscured by a creature that is at least one size larger than you."}
 
